@@ -1,0 +1,20 @@
+query GetPost(
+    $id: String!
+    
+) {
+    blogPost(
+        id: $id
+    ) {
+        post_id
+        title
+        content
+        publish_time
+        related_products
+        author {
+            title
+            name
+            url
+            author_url
+        }
+    }
+}

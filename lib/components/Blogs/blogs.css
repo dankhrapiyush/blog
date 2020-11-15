@@ -1,0 +1,84 @@
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.root {
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 0.5rem;
+}
+
+.pagination {
+    position: relative;
+    bottom: 0;
+}
+
+.blogTitle {
+    color: rgb(var(--venia-text));
+    padding-bottom: 1rem;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    text-align: center;
+}
+
+.postList {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.postList .postHeader .postTitle {
+    max-width:80%;
+}
+.postList .postHeader .postTitle a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #636363;
+}
+.postList .postHeader .postTitle {
+    margin: 0;
+    padding: 10px 0;
+}
+.postList .postContent .postReadMore {
+    padding-top:10px;
+    float:right;
+    color: #006bb4;
+}
+
+.postHolder {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+}
+.postHolder .postHeader .postInfo {
+    padding: 0 0 20px 0;
+}
+.postHolder .postHeader .postInfo .item {
+    display: inline-block;
+}
+.postHolder .postHeader .postInfo .dash {
+    display: none;
+}
+.postHolder .postHeader .postInfo .label {
+    font-weight: 700;
+}
+.postHolder .postHeader .postInfo .value { 
+    font-style: italic;
+}
+.postHolder .postHeader .postInfo .item::after {
+    display: inline-block;
+    content: ' | ';
+    color:#b9b9b9;
+    margin: 0 10px;
+}
+.postHolder .postHeader .postInfo .item:last-child::after{
+    display: none;
+}

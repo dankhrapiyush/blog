@@ -1,0 +1,24 @@
+query PostComment(
+    $filter: BlogCommentsFilterInput!
+    $pageSize: Int!
+    $currentPage: Int!
+) {
+    blogComments(
+        filter: $filter
+        pageSize: $pageSize
+        currentPage: $currentPage
+    ) {
+        total_count
+        items {
+            post_id
+            comment_id
+            status
+            author_type
+            author_nickname
+            author_email
+            text
+            creation_time
+            update_time
+        }
+    }
+}

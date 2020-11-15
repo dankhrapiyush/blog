@@ -1,0 +1,20 @@
+query blogPosts(
+    $pageSize: Int!
+    $currentPage: Int!
+) {
+    blogPosts(
+        pageSize: $pageSize
+        currentPage: $currentPage
+    ) {
+        total_count
+        total_pages
+        items {
+            post_id
+            identifier
+            title
+            content
+            publish_time
+            short_content
+        }
+    }
+}

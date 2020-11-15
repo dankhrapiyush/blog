@@ -1,0 +1,42 @@
+query products(
+    $filters: ProductAttributeFilterInput!
+) {
+    products(
+        filter: $filters
+    ) {
+        items {
+            # Once graphql-ce/1027 is resolved, use a ProductDetails fragment here instead.
+            __typename
+            id
+            media_gallery_entries {
+                id
+                label
+                position
+                disabled
+                file
+            }
+            name
+            price {
+                regularPrice {
+                    amount {
+                        currency
+                        value
+                    }
+                }
+            }
+            sku
+            small_image {
+                url
+            }
+            url_key
+        }
+    }
+}
+
+# {
+#   "filters": {
+#     "sku": {
+#       "in": ["VA11-GO-NA", "VA12-SI-NA"]
+#     }
+#   }
+# }

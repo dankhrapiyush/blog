@@ -1,0 +1,75 @@
+#postComments * {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*styles for all blocks*/
+.cCount {
+    margin-bottom: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #d5d6da;
+    color: #222;
+}
+.cComment {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+/*comment*/
+.cPost .pName {
+    font-weight: 700;
+    color: #365899;
+    margin-bottom: 8px;
+}
+.cPost .cActions {
+    padding: 8px 0 10px;
+}
+.cPost .cActions {
+    font-size: 12px;
+}
+.cPost .cActions a {
+    color: #4267b2;
+}
+.cPost .cActions a:hover {
+    text-decoration: underline;
+}
+.cPost .cActions span {
+    color: #90949c;
+}
+.cAction {
+    display: block;
+    width: 40%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background: #1979c3;
+    margin-top: 24px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+.cForm {
+    margin-bottom: 18px;
+    width: 50%;
+}
+.cForm .footer {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 450px) {
+    .cPost {
+        font-size: 13px;
+    }
+    .cPost .cActions {
+        font-size: 11px;
+    }
+    .cComment {
+        position: relative;
+        margin-bottom: 18px;
+    }
+}

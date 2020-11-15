@@ -1,0 +1,20 @@
+{
+  "name": "@dankhrapiyush/blog",
+  "version": "1.0.0",
+  "description": "Implements Blog functionality on Magento 2 PWA Studio",
+  "author": "Piyush Dankhra <dankhrapiyush@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dankhrapiyush/blog"
+  },
+  "license": "MIT",
+  "pwa-studio": {
+    "targets": {
+      "intercept": "intercept.js"
+    }
+  },
+  "peerDependencies": {
+    "@magento/pwa-buildpack": "*",
+    "@magento/venia-ui": "*"
+  }
+}

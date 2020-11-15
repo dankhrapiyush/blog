@@ -1,0 +1,19 @@
+mutation addComment(
+    $post_id: Int!
+    $author_nickname: String!
+    $author_email: String!
+    $text: String!
+    $parent_id: Int!
+) {
+    addCommentToPost(
+        input: {
+            post_id: $post_id
+            author_nickname: $author_nickname
+            author_email: $author_email
+            text: $text
+            parent_id: $parent_id
+        }
+    ) {
+        total_count
+    }
+}
