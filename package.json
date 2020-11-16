@@ -16,5 +16,18 @@
   "peerDependencies": {
     "@magento/pwa-buildpack": "*",
     "@magento/venia-ui": "*"
-  }
+  },
+  "keywords": [
+    "pwastudio",
+    "pwa",
+    "blog",
+    "blogs",
+    "extension",
+    "magento",
+    "magento 2"
+  ],
+  "bugs": {
+    "url": "https://github.com/dankhrapiyush/blog/issues"
+  },
+  "homepage": "https://github.com/dankhrapiyush/blog"
 }

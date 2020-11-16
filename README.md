@@ -5,6 +5,15 @@
 * [Magefan Blog Extension](https://github.com/magefan/module-blog) >= 2.9.7
 * [Magefan Blog GraphQL Extension](https://github.com/magefan/module-blog-graph-ql) >= 2.1.0
 
+## Install this package
+```
+ yarn add @dankhrapiyush/blog
+```
+or
+```
+npm i @dankhrapiyush/blog
+```
+
 ## Features
 * Posts List Page
 * Post View Page
