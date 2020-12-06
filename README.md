@@ -25,4 +25,4 @@ npm i @dankhrapiyush/blog
 * 100% Open Source
 
 ## Demo
-[![Demo - Blog extension for PWA Studio](https://img.youtube.com/vi/madRZs5D3qQ/0.jpg)](https://www.youtube.com/watch?v=madRZs5D3qQ)
+[![Demo - Blog extension for PWA Studio](https://img.youtube.com/vi/oz12c1oENBo/0.jpg)](https://www.youtube.com/watch?v=oz12c1oENBo)
