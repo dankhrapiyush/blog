@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders blog content 1`] = `
+Array [
+  <h1
+    className="title"
+  >
+    <div
+      className="blogTitle"
+    >
+      Foo Bar
+    </div>
+  </h1>,
+  <div
+    className="postHolder"
+  >
+    <div
+      className="postHeader"
+    >
+      <div
+        className="postInfo"
+      >
+        <div
+          className="item"
+        >
+          <span
+            className="label"
+          >
+            <mock-FormattedMessage
+              defaultMessage="Posted: "
+              id="blogContent.posted"
+            />
+          </span>
+          <span
+            className="value"
+          >
+            10 Jul 2020
+          </span>
+        </div>
+        <div
+          className="item"
+        >
+          <span
+            className="label"
+          >
+            <mock-FormattedMessage
+              defaultMessage="Categories: "
+              id="blogsContent.categories"
+            />
+          </span>
+          <span
+            className="value"
+          >
+            <div
+              to="/blog/category/general"
+            >
+              General
+            </div>
+            , 
+            <div
+              to="/blog/category/new"
+            >
+              New
+            </div>
+          </span>
+        </div>
+        <div
+          className="item"
+        >
+          <span
+            className="label"
+          >
+            <mock-FormattedMessage
+              defaultMessage="Tags: "
+              id="blogsContent.tags"
+            />
+          </span>
+          <span
+            className="value"
+          >
+            <div
+              to="/blog/tag/tag1"
+            >
+              tag1
+            </div>
+            , 
+            <div
+              to="/blog/tag/tag2"
+            >
+              tag2
+            </div>
+          </span>
+        </div>
+        <div
+          className="item"
+        >
+          <span
+            className="label"
+          >
+            <mock-FormattedMessage
+              defaultMessage="Author: "
+              id="blogContent.author"
+            />
+          </span>
+          <span
+            className="value"
+          >
+            web dev
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="postContent"
+    >
+      <div
+        className="postTextHld"
+      >
+        <RichContent
+          html="Foo Bar Description"
+        />
+      </div>
+    </div>
+  </div>,
+]
+`;

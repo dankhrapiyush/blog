@@ -1,9 +1,5 @@
-query products(
-    $filters: ProductAttributeFilterInput!
-) {
-    products(
-        filter: $filters
-    ) {
+query products($filters: ProductAttributeFilterInput!) {
+    products(filter: $filters) {
         items {
             # Once graphql-ce/1027 is resolved, use a ProductDetails fragment here instead.
             __typename

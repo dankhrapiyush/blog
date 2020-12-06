@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders sidebar tags list 1`] = `
+<div
+  className="block"
+>
+  <div
+    className="blockTitle"
+  >
+    <mock-FormattedMessage
+      defaultMessage="Tags"
+      id="sidebarTags.title"
+    />
+  </div>
+  <ul
+    className="list"
+  >
+    <li>
+      <div
+        to="/blog/tag/apple"
+      >
+        apple
+      </div>
+    </li>
+    <li>
+      <div
+        to="/blog/tag/ios"
+      >
+        ios
+      </div>
+    </li>
+    <li>
+      <div
+        to="/blog/tag/ipad"
+      >
+        ipad
+      </div>
+    </li>
+    <li>
+      <div
+        to="/blog/tag/news"
+      >
+        news
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders sidebar tags list when count is greater than zero and no data exist 1`] = `null`;
+
+exports[`renders sidebar tags list when count is zero 1`] = `null`;
+
+exports[`renders sidebar tags list when count is zero and data exist 1`] = `null`;

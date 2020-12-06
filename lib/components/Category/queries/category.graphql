@@ -1,0 +1,11 @@
+query blogCategory($id: String!) {
+    blogCategory(id: $id) {
+        category_id
+        identifier
+        title
+        meta_title
+        meta_description
+        is_active
+        content
+    }
+}

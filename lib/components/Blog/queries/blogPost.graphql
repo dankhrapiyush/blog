@@ -1,12 +1,9 @@
-query GetPost(
-    $id: String!
-    
-) {
-    blogPost(
-        id: $id
-    ) {
+query GetPost($id: String!) {
+    blogPost(id: $id) {
         post_id
         title
+        meta_title
+        meta_description
         content
         publish_time
         related_products
@@ -15,6 +12,18 @@ query GetPost(
             name
             url
             author_url
+        }
+        tags {
+            tag_id
+            identifier
+            title
+            is_active
+        }
+        categories {
+            category_id
+            identifier
+            title
+            is_active
         }
     }
 }

@@ -1,5 +1,9 @@
-query blogPosts($pageSize: Int!, $currentPage: Int!) {
-    blogPosts(pageSize: $pageSize, currentPage: $currentPage) {
+query blogPosts(
+    $pageSize: Int!
+    $currentPage: Int!
+    $filter: BlogPostsFilterInput!
+) {
+    blogPosts(pageSize: $pageSize, currentPage: $currentPage, filter: $filter) {
         total_count
         total_pages
         items {

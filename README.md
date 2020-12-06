@@ -7,7 +7,7 @@
 
 ## Install this package
 ```
- yarn add @dankhrapiyush/blog
+yarn add @dankhrapiyush/blog
 ```
 or
 ```
@@ -17,6 +17,8 @@ npm i @dankhrapiyush/blog
 ## Features
 * Posts List Page
 * Post View Page
+* Blog Tag View Page
+* Blog Category View Page
 * Blog Comments
 * Related products
 * SEO-friendly URLs

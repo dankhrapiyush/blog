@@ -1,11 +1,34 @@
 .clearfix:after {
-    content:"";
-    display:table;
-    clear:both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .root {
-    padding: 1rem;
+    padding: 2.5rem 0;
+    margin: 0 auto;
+}
+
+.errorText {
+    color: rgb(var(--venia-global-color-error));
+    line-height: var(--venia-global-lineHeight-300);
+}
+
+.body {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 16rem;
+    /* The summary grid item spans the entire right column. */
+    grid-template-areas: 'items summary';
+}
+
+.itemsContainer {
+    grid-area: items;
+}
+
+.summaryContainer {
+    grid-area: summary;
+    height: 100%;
 }
 
 .title {
@@ -34,7 +57,7 @@
     list-style: none;
 }
 .postList .postHeader .postTitle {
-    max-width:80%;
+    max-width: 80%;
 }
 .postList .postHeader .postTitle a {
     text-decoration: none;
@@ -46,13 +69,12 @@
     padding: 10px 0;
 }
 .postList .postContent .postReadMore {
-    padding-top:10px;
-    float:right;
+    padding-top: 10px;
+    float: right;
     color: #006bb4;
 }
 
 .postHolder {
-    padding-bottom: 20px;
     margin-bottom: 40px;
     padding: 20px;
     border: 1px solid #e9e9e9;
@@ -70,15 +92,34 @@
 .postHolder .postHeader .postInfo .label {
     font-weight: 700;
 }
-.postHolder .postHeader .postInfo .value { 
+.postHolder .postHeader .postInfo .value {
     font-style: italic;
 }
 .postHolder .postHeader .postInfo .item::after {
     display: inline-block;
     content: ' | ';
-    color:#b9b9b9;
+    color: #b9b9b9;
     margin: 0 10px;
 }
-.postHolder .postHeader .postInfo .item:last-child::after{
+.postHolder .postHeader .postInfo .item:last-child::after {
     display: none;
+}
+
+/*
+ * Mobile-specific styles.
+ */
+
+@media (max-width: 960px) {
+    .root {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .body {
+        /* Only one column in mobile view. */
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'items'
+            'summary';
+    }
 }

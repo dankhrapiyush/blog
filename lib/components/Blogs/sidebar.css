@@ -1,0 +1,16 @@
+.block {
+    margin-bottom: 30px;
+}
+.blockTitle {
+    font-size: 1rem;
+    color: rgb(var(--venia-global-color-gray-900));
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+.list {
+    list-style: disc;
+}
+.list li {
+    margin: 5px 0 5px 28px;
+}

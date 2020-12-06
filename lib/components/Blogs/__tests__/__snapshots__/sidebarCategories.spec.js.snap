@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders sidebar categories list 1`] = `
+<div
+  className="block"
+>
+  <div
+    className="blockTitle"
+  >
+    <mock-FormattedMessage
+      defaultMessage="Categories"
+      id="sidebarCategories.title"
+    />
+  </div>
+  <ul
+    className="list"
+  >
+    <li>
+      <div
+        to="/blog/category/general"
+      >
+        General
+         
+        (12)
+      </div>
+    </li>
+    <li>
+      <div
+        to="/blog/category/tech"
+      >
+        Tech
+         
+        (10)
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders sidebar categories list when count is greater than zero and no data exist 1`] = `null`;
+
+exports[`renders sidebar categories list when count is zero 1`] = `null`;
+
+exports[`renders sidebar categories list when count is zero and data exist 1`] = `null`;

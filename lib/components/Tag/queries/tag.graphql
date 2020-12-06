@@ -1,0 +1,11 @@
+query blogTag($id: String!) {
+    blogTag(id: $id) {
+        tag_id
+        identifier
+        title
+        meta_title
+        meta_description
+        is_active
+        content
+    }
+}
