@@ -1,6 +1,6 @@
 {
   "name": "@dankhrapiyush/blog",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Implements Blog functionality on Magento 2 PWA Studio",
   "author": "Piyush Dankhra <dankhrapiyush@gmail.com>",
   "repository": {
