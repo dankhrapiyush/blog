@@ -1,6 +1,7 @@
 query blogConfigData {
     storeConfig {
         id
+        store_code
         mfblog_post_view_comments_type
         mfblog_post_view_related_products_enabled
         mfblog_post_view_related_products_number_of_products
