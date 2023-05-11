@@ -1,6 +1,7 @@
 query blogConfigData {
     storeConfig {
         id
+        store_code
         mfblog_post_view_comments_number_of_comments
     }
 }
