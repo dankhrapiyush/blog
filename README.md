@@ -7,11 +7,11 @@
 
 ## Install this package
 ```
-yarn add @dankhrapiyush/blog
+yarn add m-helmi/blog
 ```
 or
 ```
-npm i @dankhrapiyush/blog
+npm i m-helmi/blog
 ```
 
 ## Features
